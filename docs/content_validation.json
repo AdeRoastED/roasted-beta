@@ -1,0 +1,1557 @@
+{
+ "summary": {
+  "records": 29610,
+  "entries": 6042,
+  "errors": 0,
+  "warnings": 5,
+  "info": 150,
+  "codes": {
+   "INFO punctuation-only-diff": 50,
+   "WARN case-only-diff": 5,
+   "INFO option-equals-native": 70,
+   "INFO parallel-diff": 30
+  }
+ },
+ "issues": [
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "it>en food#12",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "I am vegetarian, I do not eat meats.",
+    "I am a vegetarian, I do not eat meat.",
+    "I am vegetarian, I no eat meat.",
+    "I am vegetarian, I do not eat meat's."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "it>de food#21",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Der Kuchen, den meine Oma backt, ist der beste.",
+    "Der Kuchen, der meine Oma backt, ist der beste.",
+    "Der Kuchen, den meine Oma backt, ist der guteste.",
+    "Der Kuchen, den meine Oma backt ist, der beste."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "it>en food#23",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "The waiter asked us what we wanted to drink.",
+    "The waiter asked us what did we want to drink.",
+    "The waiter asked us what we wanted to drink?",
+    "The waiter asked to us what we wanted to drink."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "it>en sports#5",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "He scored three goal.",
+    "He scored three goals.",
+    "He scored three goales.",
+    "He scored three goal's."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "it>fr sports#5",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Il a marqué trois buts.",
+    "Il a marqué trois but.",
+    "Il a marqué trois butes.",
+    "Il a marqué trois but's."
+   ]
+  },
+  {
+   "sev": "WARN",
+   "code": "case-only-diff",
+   "where": "it>en culture#3",
+   "msg": "two options differ only by capital letters — check it is a fair question",
+   "extra": [
+    "She read a book about italian history.",
+    "She read a book about Italian history.",
+    "She read a book on italy history.",
+    "She read a book of Italy history."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "it>en culture#28",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "She asked me which painting I preferred.",
+    "She asked me which painting did I prefer.",
+    "She asked to me which painting I preferred.",
+    "She asked me which painting I preferred?"
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "it>af culture#28",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Sy het my gevra watter skildery ek verkies.",
+    "Sy het my gevra watter skildery verkies ek.",
+    "Sy het my gevra watter skildery ek verkies?",
+    "Sy het my gevra wat skildery ek verkies."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "it>en dailylife#0",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Your going to be late.",
+    "You're going to be late.",
+    "Yor going to be late.",
+    "Youre going to be late."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "it>en greet#12",
+   "msg": "an option is identical to the native sentence",
+   "extra": "No"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "it>fr adj#11",
+   "msg": "an option is identical to the native sentence",
+   "extra": "triste"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "it>fr adj#14",
+   "msg": "an option is identical to the native sentence",
+   "extra": "facile"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "it>fr adj#15",
+   "msg": "an option is identical to the native sentence",
+   "extra": "difficile"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "it>fr pron#1",
+   "msg": "an option is identical to the native sentence",
+   "extra": "tu"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "it>fr months#10",
+   "msg": "an option is identical to the native sentence",
+   "extra": "novembre"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "it>fr dir#16",
+   "msg": "an option is identical to the native sentence",
+   "extra": "l'est"
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "en>de food#21",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Der Kuchen, den meine Oma backt, ist der beste.",
+    "Der Kuchen, der meine Oma backt, ist der beste.",
+    "Der Kuchen, den meine Oma backt, ist der guteste.",
+    "Der Kuchen, den meine Oma backt ist, der beste."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "en>it food#23",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Il cameriere ci ha chiesto cosa volevamo bere.",
+    "Il cameriere ci ha chiesto cosa volevamo bere?",
+    "Il cameriere ci ha chiesto cosa vogliamo noi bere.",
+    "Il cameriere ci ha chiesto che cosa volevamo di bere."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "en>fr sports#5",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Il a marqué trois buts.",
+    "Il a marqué trois but.",
+    "Il a marqué trois butes.",
+    "Il a marqué trois but's."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "en>it culture#28",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Mi ha chiesto quale quadro preferivo.",
+    "Mi ha chiesto quale quadro preferivo?",
+    "Ha chiesto mi quale quadro preferivo.",
+    "Mi ha chiesto quale quadro preferivano."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "en>af culture#28",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Sy het my gevra watter skildery ek verkies.",
+    "Sy het my gevra watter skildery verkies ek.",
+    "Sy het my gevra watter skildery ek verkies?",
+    "Sy het my gevra wat skildery ek verkies."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "en>it greet#12",
+   "msg": "an option is identical to the native sentence",
+   "extra": "No"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "en>fr adj#21",
+   "msg": "an option is identical to the native sentence",
+   "extra": "long"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "en>af basic#0",
+   "msg": "an option is identical to the native sentence",
+   "extra": "water"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "en>af basic#8",
+   "msg": "an option is identical to the native sentence",
+   "extra": "man"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "en>af basic#24",
+   "msg": "an option is identical to the native sentence",
+   "extra": "bed"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "en>af time#10",
+   "msg": "an option is identical to the native sentence",
+   "extra": "week"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "en>af time#18",
+   "msg": "an option is identical to the native sentence",
+   "extra": "winter"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "en>af pron#7",
+   "msg": "an option is identical to the native sentence",
+   "extra": "my"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "en>de months#3",
+   "msg": "an option is identical to the native sentence",
+   "extra": "April"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "en>af months#3",
+   "msg": "an option is identical to the native sentence",
+   "extra": "April"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "en>de months#7",
+   "msg": "an option is identical to the native sentence",
+   "extra": "August"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "en>de months#8",
+   "msg": "an option is identical to the native sentence",
+   "extra": "September"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "en>af months#8",
+   "msg": "an option is identical to the native sentence",
+   "extra": "September"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "en>de months#10",
+   "msg": "an option is identical to the native sentence",
+   "extra": "November"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "en>af months#10",
+   "msg": "an option is identical to the native sentence",
+   "extra": "November"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "en>af months#18",
+   "msg": "an option is identical to the native sentence",
+   "extra": "later"
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "fr>en food#12",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "I am vegetarian, I do not eat meats.",
+    "I am a vegetarian, I do not eat meat.",
+    "I am vegetarian, I no eat meat.",
+    "I am vegetarian, I do not eat meat's."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "fr>de food#21",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Der Kuchen, den meine Oma backt, ist der beste.",
+    "Der Kuchen, der meine Oma backt, ist der beste.",
+    "Der Kuchen, den meine Oma backt, ist der guteste.",
+    "Der Kuchen, den meine Oma backt ist, der beste."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "fr>it food#23",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Il cameriere ci ha chiesto cosa volevamo bere.",
+    "Il cameriere ci ha chiesto cosa volevamo bere?",
+    "Il cameriere ci ha chiesto cosa vogliamo noi bere.",
+    "Il cameriere ci ha chiesto che cosa volevamo di bere."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "fr>en food#23",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "The waiter asked us what we wanted to drink.",
+    "The waiter asked us what did we want to drink.",
+    "The waiter asked us what we wanted to drink?",
+    "The waiter asked to us what we wanted to drink."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "fr>en sports#5",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "He scored three goal.",
+    "He scored three goals.",
+    "He scored three goales.",
+    "He scored three goal's."
+   ]
+  },
+  {
+   "sev": "WARN",
+   "code": "case-only-diff",
+   "where": "fr>en culture#3",
+   "msg": "two options differ only by capital letters — check it is a fair question",
+   "extra": [
+    "She read a book about italian history.",
+    "She read a book about Italian history.",
+    "She read a book on italy history.",
+    "She read a book of Italy history."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "fr>it culture#28",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Mi ha chiesto quale quadro preferivo.",
+    "Mi ha chiesto quale quadro preferivo?",
+    "Ha chiesto mi quale quadro preferivo.",
+    "Mi ha chiesto quale quadro preferivano."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "fr>en culture#28",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "She asked me which painting I preferred.",
+    "She asked me which painting did I prefer.",
+    "She asked to me which painting I preferred.",
+    "She asked me which painting I preferred?"
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "fr>af culture#28",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Sy het my gevra watter skildery ek verkies.",
+    "Sy het my gevra watter skildery verkies ek.",
+    "Sy het my gevra watter skildery ek verkies?",
+    "Sy het my gevra wat skildery ek verkies."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "fr>en dailylife#0",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Your going to be late.",
+    "You're going to be late.",
+    "Yor going to be late.",
+    "Youre going to be late."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "fr>it adj#11",
+   "msg": "an option is identical to the native sentence",
+   "extra": "triste"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "fr>it adj#14",
+   "msg": "an option is identical to the native sentence",
+   "extra": "facile"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "fr>it adj#15",
+   "msg": "an option is identical to the native sentence",
+   "extra": "difficile"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "fr>en adj#21",
+   "msg": "an option is identical to the native sentence",
+   "extra": "long"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "fr>it pron#1",
+   "msg": "an option is identical to the native sentence",
+   "extra": "tu"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "fr>de months#4",
+   "msg": "an option is identical to the native sentence",
+   "extra": "mai"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "fr>it months#10",
+   "msg": "an option is identical to the native sentence",
+   "extra": "novembre"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "fr>it dir#16",
+   "msg": "an option is identical to the native sentence",
+   "extra": "l'est"
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "de>en food#12",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "I am vegetarian, I do not eat meats.",
+    "I am a vegetarian, I do not eat meat.",
+    "I am vegetarian, I no eat meat.",
+    "I am vegetarian, I do not eat meat's."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "de>it food#23",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Il cameriere ci ha chiesto cosa volevamo bere.",
+    "Il cameriere ci ha chiesto cosa volevamo bere?",
+    "Il cameriere ci ha chiesto cosa vogliamo noi bere.",
+    "Il cameriere ci ha chiesto che cosa volevamo di bere."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "de>en food#23",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "The waiter asked us what we wanted to drink.",
+    "The waiter asked us what did we want to drink.",
+    "The waiter asked us what we wanted to drink?",
+    "The waiter asked to us what we wanted to drink."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "de>en sports#5",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "He scored three goal.",
+    "He scored three goals.",
+    "He scored three goales.",
+    "He scored three goal's."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "de>fr sports#5",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Il a marqué trois buts.",
+    "Il a marqué trois but.",
+    "Il a marqué trois butes.",
+    "Il a marqué trois but's."
+   ]
+  },
+  {
+   "sev": "WARN",
+   "code": "case-only-diff",
+   "where": "de>en culture#3",
+   "msg": "two options differ only by capital letters — check it is a fair question",
+   "extra": [
+    "She read a book about italian history.",
+    "She read a book about Italian history.",
+    "She read a book on italy history.",
+    "She read a book of Italy history."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "de>it culture#28",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Mi ha chiesto quale quadro preferivo.",
+    "Mi ha chiesto quale quadro preferivo?",
+    "Ha chiesto mi quale quadro preferivo.",
+    "Mi ha chiesto quale quadro preferivano."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "de>en culture#28",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "She asked me which painting I preferred.",
+    "She asked me which painting did I prefer.",
+    "She asked to me which painting I preferred.",
+    "She asked me which painting I preferred?"
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "de>af culture#28",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Sy het my gevra watter skildery ek verkies.",
+    "Sy het my gevra watter skildery verkies ek.",
+    "Sy het my gevra watter skildery ek verkies?",
+    "Sy het my gevra wat skildery ek verkies."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "de>en dailylife#0",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Your going to be late.",
+    "You're going to be late.",
+    "Yor going to be late.",
+    "Youre going to be late."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "de>af greet#0",
+   "msg": "an option is identical to the native sentence",
+   "extra": "Hallo"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "de>af greet#11",
+   "msg": "an option is identical to the native sentence",
+   "extra": "Ja"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "de>af adj#1",
+   "msg": "an option is identical to the native sentence",
+   "extra": "klein"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "de>af adj#23",
+   "msg": "an option is identical to the native sentence",
+   "extra": "arm"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "de>af pron#24",
+   "msg": "an option is identical to the native sentence",
+   "extra": "niemand"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "de>af pron#27",
+   "msg": "an option is identical to the native sentence",
+   "extra": "alles"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "de>en months#3",
+   "msg": "an option is identical to the native sentence",
+   "extra": "April"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "de>af months#3",
+   "msg": "an option is identical to the native sentence",
+   "extra": "April"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "de>fr months#4",
+   "msg": "an option is identical to the native sentence",
+   "extra": "Mai"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "de>en months#7",
+   "msg": "an option is identical to the native sentence",
+   "extra": "August"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "de>en months#8",
+   "msg": "an option is identical to the native sentence",
+   "extra": "September"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "de>af months#8",
+   "msg": "an option is identical to the native sentence",
+   "extra": "September"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "de>af months#9",
+   "msg": "an option is identical to the native sentence",
+   "extra": "Oktober"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "de>en months#10",
+   "msg": "an option is identical to the native sentence",
+   "extra": "November"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "de>af months#10",
+   "msg": "an option is identical to the native sentence",
+   "extra": "November"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "de>af dir#0",
+   "msg": "an option is identical to the native sentence",
+   "extra": "links"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "de>af dir#3",
+   "msg": "an option is identical to the native sentence",
+   "extra": "hier"
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "th>en food#12",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "I am vegetarian, I do not eat meats.",
+    "I am a vegetarian, I do not eat meat.",
+    "I am vegetarian, I no eat meat.",
+    "I am vegetarian, I do not eat meat's."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "th>de food#21",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Der Kuchen, den meine Oma backt, ist der beste.",
+    "Der Kuchen, der meine Oma backt, ist der beste.",
+    "Der Kuchen, den meine Oma backt, ist der guteste.",
+    "Der Kuchen, den meine Oma backt ist, der beste."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "th>it food#23",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Il cameriere ci ha chiesto cosa volevamo bere.",
+    "Il cameriere ci ha chiesto cosa volevamo bere?",
+    "Il cameriere ci ha chiesto cosa vogliamo noi bere.",
+    "Il cameriere ci ha chiesto che cosa volevamo di bere."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "th>en food#23",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "The waiter asked us what we wanted to drink.",
+    "The waiter asked us what did we want to drink.",
+    "The waiter asked us what we wanted to drink?",
+    "The waiter asked to us what we wanted to drink."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "th>en sports#5",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "He scored three goal.",
+    "He scored three goals.",
+    "He scored three goales.",
+    "He scored three goal's."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "th>fr sports#5",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Il a marqué trois buts.",
+    "Il a marqué trois but.",
+    "Il a marqué trois butes.",
+    "Il a marqué trois but's."
+   ]
+  },
+  {
+   "sev": "WARN",
+   "code": "case-only-diff",
+   "where": "th>en culture#3",
+   "msg": "two options differ only by capital letters — check it is a fair question",
+   "extra": [
+    "She read a book about italian history.",
+    "She read a book about Italian history.",
+    "She read a book on italy history.",
+    "She read a book of Italy history."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "th>it culture#28",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Mi ha chiesto quale quadro preferivo.",
+    "Mi ha chiesto quale quadro preferivo?",
+    "Ha chiesto mi quale quadro preferivo.",
+    "Mi ha chiesto quale quadro preferivano."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "th>en culture#28",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "She asked me which painting I preferred.",
+    "She asked me which painting did I prefer.",
+    "She asked to me which painting I preferred.",
+    "She asked me which painting I preferred?"
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "th>af culture#28",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Sy het my gevra watter skildery ek verkies.",
+    "Sy het my gevra watter skildery verkies ek.",
+    "Sy het my gevra watter skildery ek verkies?",
+    "Sy het my gevra wat skildery ek verkies."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "th>en dailylife#0",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Your going to be late.",
+    "You're going to be late.",
+    "Yor going to be late.",
+    "Youre going to be late."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "af>en food#12",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "I am vegetarian, I do not eat meats.",
+    "I am a vegetarian, I do not eat meat.",
+    "I am vegetarian, I no eat meat.",
+    "I am vegetarian, I do not eat meat's."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "af>de food#21",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Der Kuchen, den meine Oma backt, ist der beste.",
+    "Der Kuchen, der meine Oma backt, ist der beste.",
+    "Der Kuchen, den meine Oma backt, ist der guteste.",
+    "Der Kuchen, den meine Oma backt ist, der beste."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "af>it food#23",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Il cameriere ci ha chiesto cosa volevamo bere.",
+    "Il cameriere ci ha chiesto cosa volevamo bere?",
+    "Il cameriere ci ha chiesto cosa vogliamo noi bere.",
+    "Il cameriere ci ha chiesto che cosa volevamo di bere."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "af>en food#23",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "The waiter asked us what we wanted to drink.",
+    "The waiter asked us what did we want to drink.",
+    "The waiter asked us what we wanted to drink?",
+    "The waiter asked to us what we wanted to drink."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "af>en sports#5",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "He scored three goal.",
+    "He scored three goals.",
+    "He scored three goales.",
+    "He scored three goal's."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "af>fr sports#5",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Il a marqué trois buts.",
+    "Il a marqué trois but.",
+    "Il a marqué trois butes.",
+    "Il a marqué trois but's."
+   ]
+  },
+  {
+   "sev": "WARN",
+   "code": "case-only-diff",
+   "where": "af>en culture#3",
+   "msg": "two options differ only by capital letters — check it is a fair question",
+   "extra": [
+    "She read a book about italian history.",
+    "She read a book about Italian history.",
+    "She read a book on italy history.",
+    "She read a book of Italy history."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "af>it culture#28",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Mi ha chiesto quale quadro preferivo.",
+    "Mi ha chiesto quale quadro preferivo?",
+    "Ha chiesto mi quale quadro preferivo.",
+    "Mi ha chiesto quale quadro preferivano."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "af>en culture#28",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "She asked me which painting I preferred.",
+    "She asked me which painting did I prefer.",
+    "She asked to me which painting I preferred.",
+    "She asked me which painting I preferred?"
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "punctuation-only-diff",
+   "where": "af>en dailylife#0",
+   "msg": "two options differ only by punctuation/apostrophes (intended trap? check)",
+   "extra": [
+    "Your going to be late.",
+    "You're going to be late.",
+    "Yor going to be late.",
+    "Youre going to be late."
+   ]
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "af>de greet#0",
+   "msg": "an option is identical to the native sentence",
+   "extra": "Hallo"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "af>de greet#11",
+   "msg": "an option is identical to the native sentence",
+   "extra": "Ja"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "af>de adj#1",
+   "msg": "an option is identical to the native sentence",
+   "extra": "klein"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "af>de adj#23",
+   "msg": "an option is identical to the native sentence",
+   "extra": "arm"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "af>en basic#0",
+   "msg": "an option is identical to the native sentence",
+   "extra": "water"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "af>en basic#8",
+   "msg": "an option is identical to the native sentence",
+   "extra": "man"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "af>en basic#24",
+   "msg": "an option is identical to the native sentence",
+   "extra": "bed"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "af>en time#10",
+   "msg": "an option is identical to the native sentence",
+   "extra": "week"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "af>en time#18",
+   "msg": "an option is identical to the native sentence",
+   "extra": "winter"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "af>en pron#7",
+   "msg": "an option is identical to the native sentence",
+   "extra": "my"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "af>de pron#24",
+   "msg": "an option is identical to the native sentence",
+   "extra": "niemand"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "af>de pron#27",
+   "msg": "an option is identical to the native sentence",
+   "extra": "alles"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "af>en months#3",
+   "msg": "an option is identical to the native sentence",
+   "extra": "April"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "af>de months#3",
+   "msg": "an option is identical to the native sentence",
+   "extra": "April"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "af>en months#8",
+   "msg": "an option is identical to the native sentence",
+   "extra": "September"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "af>de months#8",
+   "msg": "an option is identical to the native sentence",
+   "extra": "September"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "af>de months#9",
+   "msg": "an option is identical to the native sentence",
+   "extra": "Oktober"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "af>en months#10",
+   "msg": "an option is identical to the native sentence",
+   "extra": "November"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "af>de months#10",
+   "msg": "an option is identical to the native sentence",
+   "extra": "November"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "af>en months#18",
+   "msg": "an option is identical to the native sentence",
+   "extra": "later"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "af>de dir#0",
+   "msg": "an option is identical to the native sentence",
+   "extra": "links"
+  },
+  {
+   "sev": "INFO",
+   "code": "option-equals-native",
+   "where": "af>de dir#3",
+   "msg": "an option is identical to the native sentence",
+   "extra": "hier"
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "food#3 →it",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "en": "Posso avere due tazze di caffè, per favore?",
+    "fr": "Posso avere due caffè, per favore?",
+    "de": "Posso avere due caffè, per favore?",
+    "th": "Posso avere due tazze di caffè, per favore?",
+    "af": "Posso avere due tazze di caffè, per favore?"
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "food#8 →it",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "en": "Mi passi il pesce?",
+    "fr": "Mi passi i pesci?",
+    "de": "Mi passi i pesci?",
+    "th": "Mi passi il pesce?",
+    "af": "Mi passi il pesce?"
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "food#3 →fr",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "it": "Je prends deux cafés, s'il vous plaît.",
+    "en": "Je peux avoir deux tasses de café, s'il vous plaît?",
+    "de": "Je prends deux cafés, s'il vous plaît.",
+    "th": "Je peux avoir deux tasses de café, s'il vous plaît?",
+    "af": "Je peux avoir deux tasses de café, s'il vous plaît?"
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "food#6 →fr",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "it": "Je voudrais un jus d'orange frais.",
+    "en": "Je voudrais un jus d'orange pressé.",
+    "de": "Je voudrais un jus d'orange pressé.",
+    "th": "Je voudrais un jus d'orange pressé.",
+    "af": "Je voudrais un jus d'orange pressé."
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "food#9 →fr",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "it": "Je suis rassasié, je ne peux plus rien manger.",
+    "en": "J'ai trop mangé, je n'en peux plus.",
+    "de": "Je suis rassasié, je ne peux plus rien manger.",
+    "th": "J'ai trop mangé, je n'en peux plus.",
+    "af": "Je suis rassasié, je ne peux plus rien manger."
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "food#3 →de",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "it": "Ich nehme zwei Kaffee, bitte.",
+    "en": "Kann ich zwei Tassen Kaffee haben, bitte?",
+    "fr": "Ich nehme zwei Kaffee, bitte.",
+    "th": "Kann ich zwei Tassen Kaffee haben, bitte?",
+    "af": "Kann ich zwei Tassen Kaffee haben, bitte?"
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "food#6 →de",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "it": "Ich möchte einen frischen Orangensaft.",
+    "en": "Ich möchte einen frisch gepressten Orangensaft.",
+    "fr": "Ich möchte einen frisch gepressten Orangensaft.",
+    "th": "Ich möchte einen frisch gepressten Orangensaft.",
+    "af": "Ich möchte einen frisch gepressten Orangensaft."
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "food#8 →de",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "it": "Gibst du mir die Fische?",
+    "en": "Gibst du mir den Fisch?",
+    "fr": "Gibst du mir die Fische?",
+    "th": "Gibst du mir den Fisch?",
+    "af": "Gibst du mir den Fisch?"
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "travel#12 →it",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "en": "Ho lasciato le chiavi a casa ieri.",
+    "fr": "Ho lasciato le chiavi a casa ieri.",
+    "de": "Ho lasciato le chiavi a casa ieri.",
+    "th": "Ho dimenticato le chiavi a casa ieri.",
+    "af": "Ho dimenticato le chiavi a casa ieri."
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "travel#12 →en",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "it": "I forgot my keys at home yesterday.",
+    "fr": "I left my keys at home yesterday.",
+    "de": "I left my keys at home yesterday.",
+    "th": "I forgot my keys at home yesterday.",
+    "af": "I forgot my keys at home yesterday."
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "travel#1 →fr",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "it": "Où se trouve l'hôtel?",
+    "en": "Où est l'hôtel?",
+    "de": "Où se trouve l'hôtel?",
+    "th": "Où est l'hôtel?",
+    "af": "Où se trouve l'hôtel?"
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "travel#2 →fr",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "it": "Cela fait trois jours que nous séjournons à l'hôtel.",
+    "en": "On est à l'hôtel depuis trois jours.",
+    "de": "Cela fait trois jours que nous séjournons à l'hôtel.",
+    "th": "On est à l'hôtel depuis trois jours.",
+    "af": "Cela fait trois jours que nous séjournons à l'hôtel."
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "travel#12 →fr",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "it": "J'ai oublié mes clés à la maison hier.",
+    "en": "J'ai laissé mes clés à la maison hier.",
+    "de": "J'ai laissé mes clés à la maison hier.",
+    "th": "J'ai oublié mes clés à la maison hier.",
+    "af": "J'ai oublié mes clés à la maison hier."
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "travel#13 →fr",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "it": "Combien de temps faut-il?",
+    "en": "Ça prend combien de temps?",
+    "de": "Combien de temps faut-il?",
+    "th": "Ça prend combien de temps?",
+    "af": "Combien de temps faut-il?"
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "travel#12 →de",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "it": "Ich habe gestern die Schlüssel zu Hause vergessen.",
+    "en": "Ich habe gestern die Schlüssel zu Hause gelassen.",
+    "fr": "Ich habe gestern die Schlüssel zu Hause gelassen.",
+    "th": "Ich habe gestern die Schlüssel zu Hause vergessen.",
+    "af": "Ich habe gestern die Schlüssel zu Hause vergessen."
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "travel#6 →th",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "it": "เรามาถึงลอนดอนช้า",
+    "en": "เรามาถึงลอนดอนช้ากว่ากำหนด",
+    "fr": "เรามาถึงลอนดอนช้า",
+    "de": "เรามาถึงลอนดอนช้า",
+    "af": "เรามาถึงลอนดอนช้า"
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "sports#4 →th",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "it": "เขาทำผิดพลาด",
+    "en": "กรรมการทำผิดพลาด",
+    "fr": "เขาทำผิดพลาด",
+    "de": "เขาทำผิดพลาด",
+    "af": "เขาทำผิดพลาด"
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "sports#1 →af",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "it": "Hy het vinniger as almal ander gehardloop.",
+    "en": "Hy het vinniger as enigiemand anders gehardloop.",
+    "fr": "Hy het vinniger as almal ander gehardloop.",
+    "de": "Hy het vinniger as almal ander gehardloop.",
+    "th": "Hy het vinniger as almal ander gehardloop."
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "culture#1 →fr",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "it": "Qui as-tu vu à la galerie?",
+    "en": "Tu as vu qui à la galerie?",
+    "de": "Qui as-tu vu à la galerie?",
+    "th": "Tu as vu qui à la galerie?",
+    "af": "Qui as-tu vu à la galerie?"
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "culture#9 →de",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "it": "Sie hat gute Kenntnisse in Kunst.",
+    "en": "Sie kennt sich mit Kunst sehr gut aus.",
+    "fr": "Sie hat gute Kenntnisse in Kunst.",
+    "th": "Sie hat gute Kenntnisse in Kunst.",
+    "af": "Sie hat gute Kenntnisse in Kunst."
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "culture#14 →th",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "it": "การแสดงเริ่มช้า",
+    "en": "การแสดงเริ่มช้ากว่ากำหนด",
+    "fr": "การแสดงเริ่มช้า",
+    "de": "การแสดงเริ่มช้า",
+    "af": "การแสดงเริ่มช้า"
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "dailylife#10 →it",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "en": "Ho lasciato l'ombrello a casa.",
+    "fr": "Ho lasciato l'ombrello a casa.",
+    "de": "Ho lasciato l'ombrello a casa.",
+    "th": "Ho dimenticato l'ombrello a casa.",
+    "af": "Ho dimenticato l'ombrello a casa."
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "dailylife#5 →fr",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "it": "Je vais regarder la télévision ce soir.",
+    "en": "Je vais regarder la télé ce soir.",
+    "de": "Je vais regarder la télévision ce soir.",
+    "th": "Je vais regarder la télé ce soir.",
+    "af": "Je vais regarder la télévision ce soir."
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "dailylife#8 →fr",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "it": "Elle m'a téléphoné.",
+    "en": "Elle m'a appelé.",
+    "de": "Elle m'a téléphoné.",
+    "th": "Elle m'a appelé.",
+    "af": "Elle m'a téléphoné."
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "dailylife#10 →fr",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "it": "J'ai oublié mon parapluie à la maison.",
+    "en": "J'ai laissé mon parapluie à la maison.",
+    "de": "J'ai laissé mon parapluie à la maison.",
+    "th": "J'ai oublié mon parapluie à la maison.",
+    "af": "J'ai oublié mon parapluie à la maison."
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "dailylife#15 →fr",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "it": "Où habites-tu maintenant?",
+    "en": "Tu habites où maintenant?",
+    "de": "Où habites-tu maintenant?",
+    "th": "Tu habites où maintenant?",
+    "af": "Où habites-tu maintenant?"
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "dailylife#10 →de",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "it": "Ich habe meinen Regenschirm zu Hause vergessen.",
+    "en": "Ich habe meinen Regenschirm zu Hause gelassen.",
+    "fr": "Ich habe meinen Regenschirm zu Hause gelassen.",
+    "th": "Ich habe meinen Regenschirm zu Hause vergessen.",
+    "af": "Ich habe meinen Regenschirm zu Hause vergessen."
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "dailylife#2 →th",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "it": "เปิดไฟหน่อย",
+    "en": "เปิดไฟในครัวหน่อย",
+    "fr": "เปิดไฟหน่อย",
+    "de": "เปิดไฟหน่อย",
+    "af": "เปิดไฟหน่อย"
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "dailylife#6 →th",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "it": "เขาทำงานหนัก",
+    "en": "เขาทำงานหนักทุกวัน",
+    "fr": "เขาทำงานหนัก",
+    "de": "เขาทำงานหนัก",
+    "af": "เขาทำงานหนัก"
+   }
+  },
+  {
+   "sev": "INFO",
+   "code": "parallel-diff",
+   "where": "dailylife#2 →af",
+   "msg": "natives give different correct answers for the same item (may be intended: each native sentence is slightly different)",
+   "extra": {
+    "it": "Skakel die lig aan.",
+    "en": "Skakel die lig in die kombuis aan.",
+    "fr": "Skakel die lig aan.",
+    "de": "Skakel die lig aan.",
+    "th": "Skakel die lig aan."
+   }
+  }
+ ]
+}

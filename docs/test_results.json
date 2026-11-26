@@ -1,0 +1,676 @@
+{
+ "summary": {
+  "pass": 42,
+  "fail": 0,
+  "skip": 0,
+  "date": "2026-11-26T05:36:56.822Z",
+  "dist": "/home/claude/rel/pkg38/unz",
+  "chrome": "/usr/bin/google-chrome"
+ },
+ "results": [
+  {
+   "id": "B1",
+   "name": "Normal build: opens on the first page, no QA tools inside",
+   "status": "PASS",
+   "details": {
+    "screen": "Welcome",
+    "kind": "normal",
+    "build": "v38",
+    "qa": false,
+    "openQA": "undefined",
+    "monet": false,
+    "lock": true
+   },
+   "ms": 1093
+  },
+  {
+   "id": "B2",
+   "name": "QA build: QA tools present, separate storage and cache names",
+   "status": "PASS",
+   "details": {
+    "kind": "qa",
+    "store": "roastedqa",
+    "cache": "roasted-qa-v",
+    "fab": true,
+    "lock": false,
+    "monet": true
+   },
+   "ms": 1007
+  },
+  {
+   "id": "W1",
+   "name": "\"What's new\" pop-up after an update: shown once, in the user's language (all 6), never to first-time users",
+   "status": "PASS",
+   "details": {
+    "it": {
+     "shown": "block",
+     "title": "✨ Novità",
+     "first": "• 💬 24 conversazioni: 8 per livello (Principiante, Intermedio, Avanzato)",
+     "ver": "1.7",
+     "again": "none"
+    },
+    "en": {
+     "shown": "block",
+     "title": "✨ What's new",
+     "first": "• 💬 24 conversations: 8 per level (Beginner, Intermediate, Advanced)",
+     "ver": "1.7",
+     "again": "none"
+    },
+    "fr": {
+     "shown": "block",
+     "title": "✨ Nouveautés",
+     "first": "• 💬 24 conversations: 8 par niveau (Débutant, Intermédiaire, Avancé)",
+     "ver": "1.7",
+     "again": "none"
+    },
+    "de": {
+     "shown": "block",
+     "title": "✨ Neuigkeiten",
+     "first": "• 💬 24 Gespräche: 8 pro Stufe (Anfänger, Mittelstufe, Fortgeschritten)",
+     "ver": "1.7",
+     "again": "none"
+    },
+    "th": {
+     "shown": "block",
+     "title": "✨ มีอะไรใหม่",
+     "first": "• 💬 บทสนทนา 24 บท ระดับละ 8 บท (เริ่มต้น ระดับกลาง ขั้นสูง)",
+     "ver": "1.7",
+     "again": "none"
+    },
+    "af": {
+     "shown": "block",
+     "title": "✨ Wat is nuut",
+     "first": "• 💬 24 gesprekke: 8 per vlak (Beginner, Intermediêr, Gevorderd)",
+     "ver": "1.7",
+     "again": "none"
+    }
+   },
+   "ms": 26967
+  },
+  {
+   "id": "C1",
+   "name": "All 30 language pairs × every topic × every level: play to the end (1 wrong + rest correct)",
+   "status": "PASS",
+   "details": {
+    "runs": 1590,
+    "qs": 15900,
+    "out": [],
+    "nout": 0
+   },
+   "ms": 45868
+  },
+  {
+   "id": "C2",
+   "name": "Number sets: every pair, every number group (0 → 2 billion)",
+   "status": "PASS",
+   "details": {
+    "sets": 450,
+    "out": []
+   },
+   "ms": 29577
+  },
+  {
+   "id": "C3",
+   "name": "Conversations: all 24 scenes × 30 pairs, every reply type, stars saved",
+   "status": "PASS",
+   "details": {
+    "plays": 720,
+    "out": []
+   },
+   "ms": 12095
+  },
+  {
+   "id": "C4",
+   "name": "Vocabulary word lists: present, filled, Thai romanization, listen buttons",
+   "status": "PASS",
+   "details": {
+    "lists": 720,
+    "out": []
+   },
+   "ms": 1594
+  },
+  {
+   "id": "C5",
+   "name": "Text tables complete in all 6 languages (trophies, reports, challenge, monetization, mic, review)",
+   "status": "PASS",
+   "details": "all tables complete",
+   "ms": 1246
+  },
+  {
+   "id": "L1",
+   "name": "Progression: next level locked until 60% on the previous level (normal build)",
+   "status": "PASS",
+   "details": {
+    "redirected": 1,
+    "s50": 0,
+    "after70": 2
+   },
+   "ms": 1186
+  },
+  {
+   "id": "L2",
+   "name": "Scoring, stars, best score and results screen",
+   "status": "PASS",
+   "details": {
+    "perfect": {
+     "stars": 3,
+     "txt": "📊 Punteggio: 10 / 10 (100%) ⭐⭐⭐Perfetto! Mi commuovo… ma non montarti la testa,"
+    },
+    "zeroStarsKept": 3,
+    "lessons": "block"
+   },
+   "ms": 1103
+  },
+  {
+   "id": "L3",
+   "name": "Undo (go back to correct) removes the mistake; lessons link never shown during a quiz",
+   "status": "PASS",
+   "details": {
+    "undo": "block",
+    "wrong": 0,
+    "lessonsDuringQuiz": "none"
+   },
+   "ms": 1132
+  },
+  {
+   "id": "L4",
+   "name": "Torture Bench: correct fix accepted, wrong fix roasted, hints limited per day",
+   "status": "PASS",
+   "details": {
+    "good": true,
+    "bad": true,
+    "used": 5,
+    "left": 0
+   },
+   "ms": 1121
+  },
+  {
+   "id": "L5",
+   "name": "Review My Mistakes: collects mistakes from all topic types; \"Again\" repeats the review",
+   "status": "PASS",
+   "details": {
+    "tps": [
+     "food",
+     "greet",
+     "num",
+     "pres"
+    ],
+    "again": true
+   },
+   "ms": 1270
+  },
+  {
+   "id": "L6",
+   "name": "Streaks, streak freeze, comeback, daily goal, early/night trophies (Bangkok time 01:00)",
+   "status": "PASS",
+   "details": {
+    "day0": "2026-11-23",
+    "shown": 5,
+    "after": 6,
+    "freeze": true,
+    "goal": 1,
+    "early": true,
+    "comeback": true
+   },
+   "ms": 1126
+  },
+  {
+   "id": "L7",
+   "name": "Pronunciation score: word order and repeated words count",
+   "status": "PASS",
+   "details": {
+    "a": 33,
+    "b": 100,
+    "d": 80
+   },
+   "ms": 927
+  },
+  {
+   "id": "L8",
+   "name": "Challenge a friend: 10 timed questions, link, friend plays the same questions in own pair, image card",
+   "status": "PASS",
+   "details": {
+    "n": 10,
+    "pair": "frde",
+    "same": true,
+    "card": 1337709,
+    "verdict": "⚔️ Tester: 10/10 en 0:00A: 10/10 en 0:00🤝 Égalité!🔁 Proposer une revanche🖼️ P"
+   },
+   "ms": 2522
+  },
+  {
+   "id": "L9",
+   "name": "Trophies page, calendar, roast level and daily goal render in all 6 languages",
+   "status": "PASS",
+   "details": {
+    "it": {
+     "t": 22,
+     "cells": 30,
+     "ring": true,
+     "pop": "block"
+    },
+    "en": {
+     "t": 22,
+     "cells": 30,
+     "ring": true,
+     "pop": "block"
+    },
+    "fr": {
+     "t": 22,
+     "cells": 30,
+     "ring": true,
+     "pop": "block"
+    },
+    "de": {
+     "t": 22,
+     "cells": 30,
+     "ring": true,
+     "pop": "block"
+    },
+    "th": {
+     "t": 22,
+     "cells": 30,
+     "ring": true,
+     "pop": "block"
+    },
+    "af": {
+     "t": 22,
+     "cells": 30,
+     "ring": true,
+     "pop": "block"
+    }
+   },
+   "ms": 1511
+  },
+  {
+   "id": "D1",
+   "name": "Backup export → import round trip; incomplete or broken files rejected",
+   "status": "PASS",
+   "details": {
+    "roundTrip": true,
+    "safetyCopy": true,
+    "rejected": [
+     "empty",
+     "st"
+    ]
+   },
+   "ms": 2785
+  },
+  {
+   "id": "D2",
+   "name": "Saved preferences: language pair and progress survive reload; app always reopens on the first page",
+   "status": "PASS",
+   "details": {
+    "screen": "Welcome",
+    "nat": "de",
+    "tgt": "fr",
+    "stars": 1
+   },
+   "ms": 2224
+  },
+  {
+   "id": "D3",
+   "name": "Old progress from v36 still loads (compatibility)",
+   "status": "PASS",
+   "details": {
+    "stars": 3,
+    "badges": [
+     "streak3"
+    ],
+    "runs": 12,
+    "streak": 4
+   },
+   "ms": 940
+  },
+  {
+   "id": "R1",
+   "name": "Question report: stable ID, pair, topic, level, shown options, expected answer, version; saved, listed, exported, survives reload",
+   "status": "PASS",
+   "details": {
+    "report": {
+     "app": "RoastED",
+     "version": "v38",
+     "build": "normal",
+     "date": "2026-11-26T05:35:44.631Z",
+     "native": "th",
+     "target": "fr",
+     "area": "quiz",
+     "qid": "food-19",
+     "sig": "5efc4a5c",
+     "topic": "food",
+     "level": "1",
+     "mode": "quiz",
+     "question": "อาหารจานนี้ขาดเกลือ",
+     "options": [
+      "Ce plat manque le sel.",
+      "Ce plat manque du sel.",
+      "Ce plat manque de sel.",
+      "Ce plat est manquant de sel."
+     ],
+     "expected": "Ce plat manque de sel.",
+     "chosen": "Ce plat manque du sel.",
+     "problem": "More than one answer is correct (มีคำตอบถูกมากกว่าหนึ่งข้อ)",
+     "comment": "test comment",
+     "id": "Rmwx4ct13gtit",
+     "sent": false
+    },
+    "exported": "roasted-reports-2026-11-26-05-35.json"
+   },
+   "ms": 2155
+  },
+  {
+   "id": "R2",
+   "name": "Reports from Torture Bench and conversations",
+   "status": "PASS",
+   "details": [
+    "torture-bench:travel-8",
+    "conversation:scene-trattoria-turn1"
+   ],
+   "ms": 1181
+  },
+  {
+   "id": "X1",
+   "name": "Security: hostile challenge links are rejected or neutralised (bad language codes, HTML in names, huge lists)",
+   "status": "PASS",
+   "details": {
+    "badLang": null,
+    "html": {
+     "v": 2,
+     "n": "en",
+     "t": "it",
+     "tp": "food",
+     "lv": 1,
+     "idx": [
+      1,
+      2
+     ],
+     "sc": 1,
+     "tm": 5,
+     "nm": "img src=x onerror=al"
+    },
+    "huge": null,
+    "badTopic": null,
+    "loadBlocked": true
+   },
+   "ms": 989
+  },
+  {
+   "id": "Q1",
+   "name": "QA panel: any pair / topic / level / single question; IDs shown; progress kept separate from the normal app",
+   "status": "PASS",
+   "details": {
+    "items": 18,
+    "pair": "afth",
+    "topic": "past",
+    "qs": 18,
+    "info": "ID past-40 [6c7b6f99] · af→th · ",
+    "qaKeys": 4,
+    "normalLv": {
+     "enitfood1": 3
+    }
+   },
+   "ms": 3525
+  },
+  {
+   "id": "Q2",
+   "name": "Monetization simulation (QA): locked level → simulated purchase; 3 corrections/day + ad refill; 3 hints/day + ad; ad after 10 questions; Premium removes limits",
+   "status": "PASS",
+   "details": {
+    "offer": "block",
+    "buyDlg": "block",
+    "unlocked": true,
+    "undoUsed": 3,
+    "undoAfter3": "none",
+    "adBtn": "block",
+    "contDlg": true,
+    "hintsFree": 3,
+    "hintAdDlg": true,
+    "premiumAccess": true
+   },
+   "ms": 1150
+  },
+  {
+   "id": "Q4",
+   "name": "Rewarded ads (QA simulation): success gives the reward once; cancel/failure/error give nothing; double callbacks cannot duplicate rewards",
+   "status": "PASS",
+   "details": {
+    "adShown": "block",
+    "afterCancel": 1,
+    "afterError": 1,
+    "afterSuccess": 3,
+    "hintDlg": "block",
+    "hintsAfterAd": 1,
+    "adHints": 1,
+    "blockedAfterCancel": true,
+    "allowAfter": 20,
+    "question": 4,
+    "overlay": "block",
+    "hintsAfterClose": 0,
+    "hintsAfterFinish": 1
+   },
+   "ms": 4585
+  },
+  {
+   "id": "Q5",
+   "name": "Corrections after an ad refill behave exactly like before the refill (counter, mistake list, question count)",
+   "status": "PASS",
+   "details": {
+    "steps": [
+     [
+      "undo with 1 left",
+      0,
+      0
+     ],
+     [
+      "0 left: undo button",
+      "none",
+      "ad",
+      "block"
+     ],
+     [
+      "after refill",
+      3,
+      "block"
+     ],
+     [
+      "undo after refill",
+      2,
+      0,
+      "q",
+      -1
+     ],
+     [
+      "next undo",
+      1,
+      0
+     ]
+    ]
+   },
+   "ms": 1111
+  },
+  {
+   "id": "Q6",
+   "name": "Lifetime Premium removes the daily correction, hint and continue limits and opens every level",
+   "status": "PASS",
+   "details": {
+    "undos": 8,
+    "undoCounter": 3,
+    "hints": 10,
+    "noGate": true,
+    "level3": 10,
+    "ads": 0
+   },
+   "ms": 1253
+  },
+  {
+   "id": "Q3",
+   "name": "Normal build never shows ads, purchase dialogs or locks from the commercial model",
+   "status": "PASS",
+   "details": {
+    "monPop": false,
+    "qaAd": false,
+    "undoAd": false,
+    "enabled": false
+   },
+   "ms": 1222
+  },
+  {
+   "id": "S1",
+   "name": "Offline: after the first visit the app and all language data work with no network",
+   "status": "PASS",
+   "details": {
+    "data": [
+     "it:21",
+     "en:21",
+     "fr:21",
+     "de:21",
+     "th:20",
+     "af:21"
+    ],
+    "scenes": 24,
+    "qs": 10
+   },
+   "ms": 4919
+  },
+  {
+   "id": "S2",
+   "name": "Service worker deletes only its own old caches — other Adeba Studio apps and the QA build are untouched",
+   "status": "PASS",
+   "details": {
+    "caches": [
+     "noise-smuggler-v3",
+     "other-app",
+     "roasted-qa-v38",
+     "roasted-v38",
+     "timermask-v9"
+    ],
+    "ns": "keep"
+   },
+   "ms": 8656
+  },
+  {
+   "id": "S3",
+   "name": "\"Force fresh reload\" (crash screen) clears only RoastED caches and its own service worker",
+   "status": "PASS",
+   "details": [
+    "noise-smuggler-v3",
+    "roasted-v38"
+   ],
+   "ms": 3805
+  },
+  {
+   "id": "S4",
+   "name": "Update: a new deployment is picked up automatically and the app reloads only on a safe screen",
+   "status": "PASS",
+   "details": {
+    "duringQuiz": "v38",
+    "after": "v38-next"
+   },
+   "ms": 11420
+  },
+  {
+   "id": "S5",
+   "name": "Interrupted download: if a file fails while installing an update, the working version stays and the update retries later",
+   "status": "PASS",
+   "details": {
+    "v0": "v38",
+    "offlineOk": true,
+    "caches": [
+     "roasted-v38b"
+    ]
+   },
+   "ms": 8505
+  },
+  {
+   "id": "S6",
+   "name": "Install metadata: manifest, icons and service worker valid for both builds",
+   "status": "PASS",
+   "details": {
+    "normal": {
+     "name": "RoastED",
+     "id": "(default)"
+    },
+    "qa": {
+     "name": "RoastED QA",
+     "id": "roasted-qa"
+    }
+   },
+   "ms": 0
+  },
+  {
+   "id": "M1",
+   "name": "Layouts: no sideways scrolling on small/large phones, tablet and landscape (main screens)",
+   "status": "PASS",
+   "details": "320x568, 360x740, 390x844, 430x932, 768x1024, 844x390",
+   "ms": 7749
+  },
+  {
+   "id": "M2",
+   "name": "Accessibility basics: every button has a name, images have alt text, page language set, top-bar targets ≥ 38 px",
+   "status": "PASS",
+   "details": {
+    "bad": [],
+    "noalt": [],
+    "small": [],
+    "lang": "en"
+   },
+   "ms": 1037
+  },
+  {
+   "id": "M3",
+   "name": "Interruptions: app goes to background and back mid-quiz; state kept, no errors",
+   "status": "PASS",
+   "details": {
+    "screen": "Quiz",
+    "i": 1,
+    "iAfter": 1,
+    "score": 1
+   },
+   "ms": 2234
+  },
+  {
+   "id": "M4",
+   "name": "No text-to-speech available: listen buttons show a message, nothing crashes",
+   "status": "PASS",
+   "details": {
+    "toast": "shown"
+   },
+   "ms": 1211
+  },
+  {
+   "id": "M5",
+   "name": "Voices missing for a language (e.g. Afrikaans) and iPhone speech workaround: speech still requested, no crash",
+   "status": "PASS",
+   "details": {
+    "ios": true,
+    "said": [
+     "Goeie môre|af-ZA",
+     "Hallo|af-ZA"
+    ]
+   },
+   "ms": 2002
+  },
+  {
+   "id": "M6",
+   "name": "Microphone: not supported / permission denied / no speech — clear messages; short-word message after 2 misses",
+   "status": "PASS",
+   "details": {
+    "denied": "Microphone blocked. Allow the microphone in your browser settings.",
+    "noSpeech": "Didn't catch that. Tap 🎤 and speak a bit louder and slower.🎤 You got me! The mic doesn't always catch short words yet. I'm working on it, just move on to the next one."
+   },
+   "ms": 1990
+  },
+  {
+   "id": "M7",
+   "name": "Android back button: moves back through screens; on the first page asks before closing",
+   "status": "PASS",
+   "details": [
+    "Menu",
+    "Home",
+    "Welcome",
+    "Welcome+dialog"
+   ],
+   "ms": 2543
+  }
+ ]
+}
